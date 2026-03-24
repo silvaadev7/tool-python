@@ -1,18 +1,17 @@
 import discord
 import asyncio
 import os
-from colorama import Fore, Style, init
-
-# Inicializa as cores
+from colorama import Fore, init
 init(autoreset=True)
 
 def clear_screen():
+    import os
     os.system('cls' if os.name == 'nt' else 'clear')
 
 def banner():
     clear_screen()
     # Pinguim em Vermelho e Branco
-    print(Fore.RED + r"""
+    art = Fore.RED + r"""
           _nnnn_                      
         dGGGGMMb     ,"""""""""""""""".
        @p~qp~~qMb    | """ + Fore.WHITE + "cyberdeath on top" + Fore.RED + r""" |
@@ -24,13 +23,10 @@ def banner():
    fZP            SMMb
    HZM            MMMM
    FqM            MMMM
- __| ".        |\dS"qML
+"""
+    print(art)
 
- |    `.       | `' \Zq
-_)      \.___.,|     .'
-\____   )MMMMMM|   .'
-     `-'       `--' hjm
-    """)
+banner()
     print(Fore.RED + "========================================")
     print(Fore.WHITE + "      DISCORD MULTI-CHANNEL TEST        ")
     print(Fore.RED + "========================================\n")
