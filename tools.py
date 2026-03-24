@@ -1,29 +1,24 @@
 import discord
 import asyncio
 import os
-
 from colorama import Fore, init
+
 init(autoreset=True)
 
 def clear_screen():
-    import os
     os.system('cls' if os.name == 'nt' else 'clear')
 
 def banner():
     clear_screen()
     print(Fore.RED + """
-   ____ ____ ____ ____ ____ ____ ____ ____ 
-  ||C |||Y |||B |||E |||R |||D |||E |||A ||
-  ||__|||__|||__|||__|||__|||__|||__|||__||
-  |/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|
-  
-   ____ ____ ____ 
-  ||T |||H |||  ||
-  ||__|||__|||__||
-  |/__\|/__\|/__\|
+   ____ ____ ____ ____ ____ ____ ____ ____ ____ ____ ____ 
+  ||C |||Y |||B |||E |||R |||D |||E |||A |||T |||H |||  ||
+  ||__|||__|||__|||__|||__|||__|||__|||__|||__|||__|||__||
+  |/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|
     """)
 
-banner()
+def main():
+    banner()
 
     print(Fore.RED + "========================================")
     print(Fore.WHITE + "      DISCORD MULTI-CHANNEL TEST        ")
