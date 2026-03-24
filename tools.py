@@ -1,6 +1,7 @@
 import discord
 import asyncio
 import os
+
 from colorama import Fore, init
 init(autoreset=True)
 
@@ -8,25 +9,25 @@ def clear_screen():
     import os
     os.system('cls' if os.name == 'nt' else 'clear')
 
-from colorama import Fore, init
-init(autoreset=True)
-
-banner_ascii = Fore.RED + r"""
-      _nnnn_                      
-    dGGGGMMb     ,"""""""""""""""".
-   @p~qp~~qMb    | """ + Fore.WHITE + "cyberdeath on top" + Fore.RED + r""" |
-   M|@||@) M|   _;................'
-   @,----.JM| -'
-  JS^\__/  qKL
- dZP        qKRb
-dZP          qKKb
-fZP            SMMb
-HZM            MMMM
-FqM            MMMM
+def banner():
+    clear_screen()
+    art = Fore.RED + r"""
+          _nnnn_                      
+        dGGGGMMb     ,"""""""""""""""".
+       @p~qp~~qMb    | """ + Fore.WHITE + "CYBERDEATH ON TOP" + Fore.RED + r""" |
+       M|@||@) M|   _;................'
+       @,----.JM| -'
+      JS^\__/  qKL
+     dZP        qKRb
+    dZP          qKKb
+   fZP            SMMb
+   HZM            MMMM
+   FqM            MMMM
 """
-print(banner_ascii)
+    print(art)
 
 banner()
+
     print(Fore.RED + "========================================")
     print(Fore.WHITE + "      DISCORD MULTI-CHANNEL TEST        ")
     print(Fore.RED + "========================================\n")
