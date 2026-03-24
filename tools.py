@@ -11,20 +11,17 @@ def clear_screen():
 
 def banner():
     clear_screen()
-    art = Fore.RED + r"""
-          _nnnn_                      
-        dGGGGMMb     ,"""""""""""""""".
-       @p~qp~~qMb    | """ + Fore.WHITE + "CYBERDEATH ON TOP" + Fore.RED + r""" |
-       M|@||@) M|   _;................'
-       @,----.JM| -'
-      JS^\__/  qKL
-     dZP        qKRb
-    dZP          qKKb
-   fZP            SMMb
-   HZM            MMMM
-   FqM            MMMM
-"""
-    print(art)
+    print(Fore.RED + """
+   ____ ____ ____ ____ ____ ____ ____ ____ 
+  ||C |||Y |||B |||E |||R |||D |||E |||A ||
+  ||__|||__|||__|||__|||__|||__|||__|||__||
+  |/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|
+  
+   ____ ____ ____ 
+  ||T |||H |||  ||
+  ||__|||__|||__||
+  |/__\|/__\|/__\|
+    """)
 
 banner()
 
